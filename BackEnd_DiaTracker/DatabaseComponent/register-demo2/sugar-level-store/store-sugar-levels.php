@@ -6,7 +6,7 @@ header("Access-Control-Allow-Credentials: true");
 
 include('database_connection.php');
 // if (isset($_COOKIE['username'])){
-    $SQL_TABLE = "CREATE TABLE IF NOT EXISTS hello (
+    $SQL_TABLE = "CREATE TABLE IF NOT EXISTS TestUser1 (
         id INT(11) NOT NULL AUTO_INCREMENT,
         added_date DATE,
         sugar_data INT(200) NOT NULL,

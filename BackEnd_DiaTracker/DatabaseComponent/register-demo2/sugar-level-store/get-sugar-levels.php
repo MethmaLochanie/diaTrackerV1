@@ -8,7 +8,7 @@ include('database_connection.php');
 // if (isset($_COOKIE['username'])){
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
         //FROM $_COOKIE['username'] as the table name
-        $SQL_SELECT = "SELECT added_date, sugar_data  FROM (SELECT added_date, sugar_data, ROW_NUMBER() OVER (ORDER BY id DESC) AS row_num FROM hello) AS temp_table WHERE row_num <= 10 ORDER BY row_num DESC";
+        $SQL_SELECT = "SELECT added_date, sugar_data  FROM (SELECT added_date, sugar_data, ROW_NUMBER() OVER (ORDER BY id DESC) AS row_num FROM TestUser1) AS temp_table WHERE row_num <= 10 ORDER BY row_num DESC";
 
         $execSQL = mysqli_query($conn,$SQL_SELECT);
         if ($execSQL){
