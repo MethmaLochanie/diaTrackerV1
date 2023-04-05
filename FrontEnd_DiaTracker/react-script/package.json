@@ -32,7 +32,7 @@
     "start": "react-scripts start",
     "start-backend": "cd FrontEnd_DiaTracker && Food_and_Exercise/bin/flask run --no-debugger",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "diatracker-project@1.0.0 test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
