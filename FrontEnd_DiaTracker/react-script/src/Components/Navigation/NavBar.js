@@ -29,7 +29,7 @@ export default function NavBar() {
           <Route path="/Pages/About/About.js" component={About} />
           </li> */}
           <li>
-            <a href="">
+            <a href="/Pages/About/About.js">
               About Us
             </a>
           </li>
