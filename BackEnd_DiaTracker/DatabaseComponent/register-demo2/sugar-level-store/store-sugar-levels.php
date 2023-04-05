@@ -36,7 +36,7 @@ include('database_connection.php');
         // $sugar_data = $_POST['date'];
         
         // $sugar_data = json_decode(file_get_contents(""))
-        $SQL_INSERT = "INSERT INTO hello(added_date,sugar_data)
+        $SQL_INSERT = "INSERT INTO TestUser1(added_date,sugar_data)
         VALUES ('$date', '$sugar_data')";
 
         if (mysqli_query($conn,$SQL_INSERT)){
