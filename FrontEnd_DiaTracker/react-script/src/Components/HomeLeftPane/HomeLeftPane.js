@@ -30,7 +30,7 @@ export default function HomeLeftPane({ data, setData }) {
   const getData = () => {
     axios
       .get(
-        "http://localhost/diaTracker-project/BackEnd_DiaTracker/DatabaseComponent/register-demo2/sugar-level-store/get-sugar-levels.php"
+        "http://localhost/diaTrackerV1/BackEnd_DiaTracker/DatabaseComponent/register-demo2/sugar-level-store/get-sugar-levels.php"
       )
       .then((response) => {
         const formattedData = response.data.map((item) => [item[0], item[1]]);
@@ -47,8 +47,8 @@ export default function HomeLeftPane({ data, setData }) {
       try {
         const newRecord = [date, currentInput];
         await axios.post(
-          "http://localhost/diaTracker-project/BackEnd_DiaTracker/DatabaseComponent/register-demo2/sugar-level-store/store-sugar-levels.php",
-          { date: date, currentInput: currentInput }
+          "http://localhost/diaTrackerV1/BackEnd_DiaTracker/DatabaseComponent/register-demo2/sugar-level-store/store-sugar-levels.php",
+          { date: date, currentInput: currentInput },
         );
         setData((existingValues) => {
           const currentValues = [...existingValues];

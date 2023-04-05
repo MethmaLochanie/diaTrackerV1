@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "diatracker_user_sugar_data";
+$dbname = "diatracker_user_sugar_data_test";
 $dbServerPort = 15230;
 
 $conn = mysqli_connect($dbhost,$dbuser, $dbpass, $dbname);
