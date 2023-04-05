@@ -1,0 +1,21 @@
+.vl {
+  border-left: 2px solid #372e18;
+  height: 10px;
+}
+.deleteIcon {
+  cursor: pointer;
+}
+.option-pane{
+  background-color: #FBCD08;
+  border-radius: 5px;
+}
+.addMedicationName{
+  background-color: #FBCD08;
+}
+button:active{
+  background-color:#372e18 !important;
+  color: #FBCD08 !important;
+}
+.medication-pane{
+  border-radius: 10px;
+}
